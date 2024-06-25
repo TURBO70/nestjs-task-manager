@@ -1,11 +1,12 @@
-import { Controller, Delete, Get, Param, Post } from '@nestjs/common';
-import { TasksService } from './tasks.service';
-import { Body } from '@nestjs/common';
-import { CreateTaskDto } from './dto/create-task.dto';
+import { Controller, Delete, Get, Param, Post } from "@nestjs/common";
+import { TasksService } from "./tasks.service";
+import { Body } from "@nestjs/common";
+import { CreateTaskDto } from "./dto/create-task.dto";
+import { Task } from "./task.entity";
 //we split controller from busness lgic bc its easy to test and maintain and
 //controller work is to recieve req and send response only
 
-@Controller('tasks')
+@Controller("tasks")
 export class TasksController {
   constructor(private tasksService: TasksService) {}
   //this constructor achieve dp injection and singlton we inject service and if no
@@ -17,10 +18,10 @@ export class TasksController {
   // }
   // //this is the get request to get all the tasks
 
-  // @Get(':/id')
-  // getTaskById(@Param('id') id: string): Task {
-  //   return this.tasksService.getTaskById(id);
-  // }
+  @Get(":/id")
+  getTaskById(@Param("id") id: string): Promise<Task> {
+    return this.tasksService.getTaskById(id);
+  }
 
   // @Delete(':/id')
   // deleteTaskById(@Param('id') id: string): void {
