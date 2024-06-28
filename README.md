@@ -23,8 +23,17 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+This project is a task management application built with NestJS, a progressive Node.js framework. It includes user authentication with JWT (JSON Web Tokens) integration, task CRUD operations, and uses TypeORM for database management. The application structure follows best practices for scalable and maintainable code.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Features
+- **Authentication:** Secure user sign-up and sign-in using JWT authentication.
+- **Task Management:** CRUD operations for tasks including creation, retrieval, update, and deletion.
+- **TypeORM Integration:** ORM (Object-Relational Mapping) integration for seamless database operations.
+- **Middleware and Interceptors:** Utilizes NestJS middleware for request processing and interceptors for data transformation.
+- **Validation and Error Handling:** Input validation using class-validator and centralized error handling.
+- **Testing:** Includes a structured test folder for unit and integration testing.
+- **Configuration:** Configuration management using NestJS ConfigModule with environment variables.
+- **Linting and Formatting:** ESLint configuration for code linting and Prettier for code formatting.
 
 ## Installation
 
