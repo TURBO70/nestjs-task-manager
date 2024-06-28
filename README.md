@@ -58,16 +58,42 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## Project Structure
+ ```powershell
+./
+├── src/
+│   ├── auth/
+│   │   ├── dto/
+│   │   │   ├── auth-credentials.dto.ts
+│   │   ├── auth.controller.ts
+│   │   ├── auth.module.ts
+│   │   ├── auth.service.ts
+│   │   ├── get-user.decorator.ts
+│   │   ├── jwt-payload.interface.ts
+│   │   ├── jwt.strategy.ts
+│   │   ├── user.entity.ts
+│   │   └── user.repository.ts
+│   ├── tasks/
+│   │   ├── dto/
+│   │   │   ├── create-task.dto.ts
+│   │   │   ├── get-tasks-filter.dto.ts
+│   │   │   └── update-task-status.dto.ts
+│   │   ├── task-status.enum.ts
+│   │   ├── task.entity.ts
+│   │   ├── tasks.controller.ts
+│   │   ├── tasks.module.ts
+│   │   ├── tasks.repository.ts
+│   │   └── tasks.service.ts
+│   ├── app.module.ts
+│   ├── config.schema.ts
+│   ├── main.ts
+│   ├── transform.interceptor.ts
+│   └── test/
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc
+├── README.md
+├── nest-cli.json
+├── package-lock.json
+└── package.json
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
