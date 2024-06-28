@@ -35,37 +35,15 @@ This project is a task management application built with NestJS, a progressive N
 - **Configuration:** Configuration management using NestJS ConfigModule with environment variables.
 - **Linting and Formatting:** ESLint configuration for code linting and Prettier for code formatting.
 
-## Installation
+## 💻Technologies Used
+- NestJS
+- TypeScript
+- TypeORM
+- JWT (JSON Web Tokens)
+- PostgreSQL (or your preferred database)
+- passport
+- ESLint
 
-```bash
-$ yarn install
-```
-
-## Running the app
-
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
 
 ## Project Structure
  ```powershell
@@ -105,4 +83,38 @@ $ yarn run test:cov
 ├── nest-cli.json
 ├── package-lock.json
 └── package.json
+
+
+```
+## Installation
+
+```bash
+$ yarn install
+```
+
+## Running the app
+
+```bash
+# development
+$ yarn run start
+
+# watch mode
+$ yarn run start:dev
+
+# production mode
+$ yarn run start:prod
+```
+
+## Test
+
+```bash
+# unit tests
+$ yarn run test
+
+# e2e tests
+$ yarn run test:e2e
+
+# test coverage
+$ yarn run test:cov
+```
 
